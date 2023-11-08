@@ -58,7 +58,7 @@ function draw(){
     fill("red");
     stroke("red");
     
-    if(score_pulso_esq>0.2){
+    //if(score_pulso_esq>0.2){
         console.log("entrou");
         circle(pulso_esqX, pulso_esqY, 20);
         var numero_pulso_esq=Number(pulso_esqY);
@@ -66,5 +66,5 @@ function draw(){
         var volume=remove_decimais/500;
         document.getElementById("volume").innerHTML="volume: "+volume;
         musica.setVolume(volume);
-    }
+    //}
 }
