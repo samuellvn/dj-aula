@@ -57,8 +57,9 @@ function draw(){
     image(video, 0, 0, 600, 500);
     fill("red");
     stroke("red");
-    console.log(score_pulso_esq);
+    
     if(score_pulso_esq>0.2){
+        console.log("entrou");
         circle(pulso_esqX, pulso_esqY, 20);
         var numero_pulso_esq=Number(pulso_esqY);
         var remove_decimais=floor(numero_pulso_esq);
